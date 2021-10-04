@@ -1,0 +1,77 @@
+- var pagetitle = "CanonXLufthansa Microsite"
+- var pagename = "portfolio"
+- var folder = "../"
+
+- bannerImgs = []
+- bannerImgs.push( { "link":"#", "src":"canonxlufthansa/banner.gif", "srcM":"canonxlufthansa/banner-m.gif", "alt":"photo 01" } )
+
+include /includes/header
+
+<!--  ====================  -->
+<!--  === Main content ===  -->
+<!--  ====================  -->
+div(class=pagename, role="main" )
+	include /includes/banner
+
+	.container
+		.row
+			.col-sm-12
+				h2
+					| Canon x Lufthansa
+				.row
+					.col-sm-offset-3.col-sm-6
+						.portfolio-body
+							h4
+								| Client
+							p
+								| Canon Singapore & Lufthansa
+							h4
+								| Live Site
+							a( href="http://www.canon.com.sg/liftoff/" target="_blank")
+								| http://www.canon.com.sg/liftoff/
+							h4
+								| Project Type
+							p
+								| Campaign Responsive Website
+							h4
+								| Project Launched
+							p
+								| September 2016
+							h4
+								| Role
+							p
+								| Web Development
+							h4
+								| Tools
+							p
+								| Bootstrap, JavaScript, HTML5, CSS, Grunt, Jade
+
+		.row.text-center
+			.col-sm-12
+				div(class="embed-responsive embed-responsive-16by9")
+					iframe(width="853" height="480" class="embed-responsive-item" src="https://www.youtube.com/embed/K3QjIjfAcwY" frameborder="0" allowfullscreen)
+			.col-sm-12
+				h5
+					| Content Page
+			.col-sm-6
+				img(src=folder + "assets/img/dist/canonxlufthansa/how-to-participate-top.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/canonxlufthansa/how-to-participate-bottom.jpg" class="img-responsive")
+			
+		.row.text-center
+			.col-sm-12
+				h5
+					| Mobile View
+			.col-sm-12.text-center
+				img(src=folder + "assets/img/dist/canonxlufthansa/mobile.jpg" class="img-responsive")
+				
+		.row.text-center
+			.col-sm-12
+				h5
+					| Content Page
+			.col-sm-6
+				img(src=folder + "assets/img/dist/canonxlufthansa/prizes-top.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/canonxlufthansa/prizes-bottom.jpg" class="img-responsive")
+			
+include /includes/footer

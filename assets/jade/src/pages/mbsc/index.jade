@@ -1,0 +1,75 @@
+- var pagetitle = "Marina Bay Countdown 2019"
+- var pagename = "portfolio"
+- var folder = "../"
+
+- bannerImgs = []
+- bannerImgs.push( { "link":"https://www.marinabaycountdown.sg/", "src":"mbsc/banner.jpg", "srcM":"mbsc/banner-m.jpg", "alt":"Marina Bay Countdown 2019" } )
+
+include /includes/header
+
+<!--  ====================  -->
+<!--  === Main content ===  -->
+<!--  ====================  -->
+div(class=pagename, role="main" )
+	include /includes/banner
+
+	.container
+		.row
+			.col-sm-12
+				h2
+					| Marina Bay Countdown 2019
+				.row
+					.col-sm-offset-3.col-sm-6
+						.portfolio-body
+							h4
+								| Client
+							p
+								| Marina Bay Singapore
+							h4
+								| Live Site
+							a( href="https://www.marinabaycountdown.sg/" target="_blank")
+								| www.marinabaycountdown.sg
+							h4
+								| Project Type
+							p
+								| Website Revamp | Responsive Website
+							h4
+								| Project Launched
+							p
+								| Nov 2018
+							h4
+								| Role
+							p
+								| Web Development
+							h4
+								| Tools
+							p
+								| HTML5, CSS, JS, Jade, SCSS
+		.row
+			.col-sm-12.text-center
+				h5
+					| On Mobile
+				img(src=folder + "assets/img/dist/mbsc/mobile-article.jpg" class="img-responsive")
+		.row.text-center
+			.col-sm-12
+				h5
+					| Listing Page
+			.col-sm-offset-2.col-sm-8
+				img(src=folder + "assets/img/dist/mbsc/content-01.jpg" class="img-responsive")
+		.row.text-center
+			.col-sm-12
+				h5
+					| Articles Page & Map
+			.col-sm-6
+				img(src=folder + "assets/img/dist/mbsc/content-03.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/mbsc/content-04.jpg" class="img-responsive")
+		
+		.row.text-center
+			.col-sm-12
+				h5
+					| Landing Page
+			.col-sm-offset-2.col-sm-8
+				img(src=folder + "assets/img/dist/mbsc/content-02.jpg" class="img-responsive")		
+
+include /includes/footer

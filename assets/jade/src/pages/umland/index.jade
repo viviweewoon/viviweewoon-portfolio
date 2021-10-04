@@ -1,0 +1,72 @@
+- var pagetitle = "UMLand"
+- var pagename = "portfolio"
+- var folder = "../"
+
+- bannerImgs = []
+- bannerImgs.push( { "link":"#", "src":"umland/banner.jpg", "srcM":"umland/banner-m.jpg", "alt":"UMLand" } )
+
+include /includes/header
+
+<!--  ====================  -->
+<!--  === Main content ===  -->
+<!--  ====================  -->
+div(class=pagename, role="main" )
+	include /includes/banner
+
+	.container
+		.row
+			.col-sm-12
+				h2
+					| UMLand
+				.row
+					.col-sm-offset-3.col-sm-6
+						.portfolio-body
+							h4
+								| Client
+							p
+								| UMLand Malaysia
+							h4
+								| Live Site
+							p
+								| http://www.umland.com.my/
+							h4
+								| Project Type
+							p
+								| Website Pitch
+							h4
+								| Role
+							p
+								| Responsive Website Design, Art Direction
+							h4
+								| Tools
+							p
+								| Photshop CS5
+							h4
+								| The Challenge
+							p
+								| Design and build great-looking and minimalism website that work on every device.
+
+		.row.text-center
+			.col-sm-12
+				h5
+					| Content Page
+			.col-sm-6
+				img(src=folder + "assets/img/dist/umland/content-01.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/umland/content-02.jpg" class="img-responsive")
+			
+		.row
+			.col-sm-12.text-center
+				h5
+					| Mobile View
+				img(src=folder + "assets/img/dist/umland/mobile.jpg" class="img-responsive")
+				
+		.row.text-center
+			.col-sm-12
+				h5
+					| Content Page
+			.col-sm-6.col-sm-offset-3
+				img(src=folder + "assets/img/dist/umland/content-03.jpg" class="img-responsive")
+			
+
+include /includes/footer

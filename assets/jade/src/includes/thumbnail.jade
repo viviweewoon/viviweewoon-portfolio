@@ -1,0 +1,23 @@
+- thumbImgs = []
+- thumbImgs.push( { "href":"mbsc", "src":"mbsc/thumbnail.jpg", "title":"Marina Bay Countdown 2019", "caption":"Marina Bay Countdown" } )
+- thumbImgs.push( { "href":"singhealth", "src":"singhealth/thumbnail.jpg", "title":"National Heart Centre Singapore | SingHealth", "caption":"National Heart Centre" } )
+- thumbImgs.push( { "href":"infrastructureasia", "src":"infrastructureasia/thumbnail.jpg", "title":"Infrastructure Asia", "caption":"Infrastructure Asia" } )
+- thumbImgs.push( { "href":"sciencecentre", "src":"sciencecentre/thumbnail.jpg", "title":"Science Centre", "caption":"Science Centre" } )
+- thumbImgs.push( { "href":"eosworld", "src":"eosworld/thumbnail.jpg", "title":"EOS World", "caption":"EOS World" } )
+- thumbImgs.push( { "href":"canonliftoff", "src":"canonxlufthansa/thumbnail.jpg", "title":"canon", "caption":"CanonXLufthansa" } )
+- thumbImgs.push( { "href":"ensure", "src":"ensure/thumbnail.jpg", "title":"Ensure", "caption":"ENSURE" } )
+- thumbImgs.push( { "href":"sciencefest", "src":"sciencefest/thumbnail.jpg", "title":"Sciencefest", "caption":"Science Festival" } )
+- thumbImgs.push( { "href":"kohler", "src":"kohler/thumbnail.jpg", "title":"Kohler", "caption":"Kohler" } )
+- thumbImgs.push( { "href":"bossinred", "src":"bossinred/thumbnail.jpg", "title":"TuneTalk", "caption":"BossInRed" } )
+- thumbImgs.push( { "href":"redthenewblack", "src":"redthenewblack/thumbnail.jpg", "title":"TuneTalk", "caption":"RedTheNewBlack" } )
+- thumbImgs.push( { "href":"umland", "src":"umland/thumbnail.jpg", "title":"UMLand", "caption":"UMLand" } )
+- thumbImgs.push( { "href":"unicard", "src":"unicard/thumbnail.jpg", "title":"Unicard", "caption":"Unicard" } )
+- thumbImgs.push( { "href":"midvalley-web", "src":"midvalley/thumbnail.jpg", "title":"Midvalley", "caption":"Midvalley" } )
+- thumbImgs.push( { "href":"colgate", "src":"colgate/thumbnail.jpg", "title":"Colgate", "caption":"Colgate" } )
+- thumbImgs.push( { "href":"talentcorp", "src":"talentcorp/thumbnail.jpg", "title":"Talentcorp", "caption":"Talentcorp" } )
+
+for thumbImg in thumbImgs
+	.col-xs-6.col-sm-4.col-md-3
+		a(href=thumbImg.href, class="thumbnail")
+			img(src=folder + "assets/img/dist/#{ thumbImg.src }", alt=thumbImg.title )
+			h3 !{ thumbImg.caption }

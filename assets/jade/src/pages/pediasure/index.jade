@@ -1,0 +1,63 @@
+- var pagetitle = "Pediasure Microsite"
+- var pagename = "portfolio"
+- var folder = "../"
+
+- bannerImgs = []
+- bannerImgs.push( { "link":"#", "src":"pediasure/banner.jpg", "srcM":"pediasure/banner-m.jpg", "alt":"Pediasure Microsite" } )
+
+include /includes/header
+
+<!--  ====================  -->
+<!--  === Main content ===  -->
+<!--  ====================  -->
+div(class=pagename, role="main" )
+	include /includes/banner
+
+	.container
+		.row
+			.col-sm-12
+				h2
+					| PediaSure Microsite
+				.row
+					.col-sm-offset-3.col-sm-6
+						.portfolio-body
+							h4
+								| Client
+							p
+								| Abbott Singapore
+							h4
+								| Live Site
+							a( href="http://abbottfamily.vintedge.com/PediaSure5promo/" target="_blank")
+								| http://abbottfamily.vintedge.com/PediaSure5promo/
+							h4
+								| Project Type
+							p
+								| Campaign Microsite
+							h4
+								| Project Launched
+							p
+								| October 2015	
+							h4
+								| Role
+							p
+								| Web Development
+							h4
+								| Tools
+							p
+								| Bootstrap, Wufoo, HTML5, CSS, Grunt, Jade
+
+		.row.text-center
+			.col-sm-6
+				img(src=folder + "assets/img/dist/pediasure/content-01.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/pediasure/content-02.jpg" class="img-responsive")
+			.col-sm-12
+				h5
+					| Content Page
+		.row
+			.col-sm-12.text-center
+				img(src=folder + "assets/img/dist/pediasure/mobile.jpg" class="img-responsive")
+				h5
+					| Mobile View
+
+include /includes/footer

@@ -1,0 +1,34 @@
+- var pagetitle = "Portfolio"
+- var pagename = "home"
+- var folder = ""
+
+include /includes/header
+
+<!--  ====================  -->
+<!--  === Main content ===  -->
+<!--  ====================  -->
+div(class="main " + pagename, role="main" )
+	.container-fluid
+		div.row
+			include /includes/carousel
+		
+	.container
+		.row
+			include /includes/thumbnail
+
+	.jumbotron.contact
+		.row
+			.col-sm-12
+				h5
+					| contact me
+				a(href="mailto:viviweewoon@gmail.com")
+					| viviweewoon@gmail.com
+				// ul
+				// 	li
+				// 		a(href="#" title="LinkedIn" target="_blank") 
+				// 			| LinkedIn
+				// 	li
+				// 		a(href="tel:+" target="_blank")
+				// 			| +
+
+include /includes/footer

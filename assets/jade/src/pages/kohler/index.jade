@@ -1,0 +1,64 @@
+- var pagetitle = "Kohler"
+- var pagename = "portfolio"
+- var folder = "../"
+
+- bannerImgs = []
+- bannerImgs.push( { "link":"#", "src":"kohler/banner.jpg", "srcM":"kohler/banner-m.jpg", "alt":"Kohler" } )
+
+include /includes/header
+
+<!--  ====================  -->
+<!--  === Main content ===  -->
+<!--  ====================  -->
+div(class=pagename, role="main" )
+	include /includes/banner
+
+	.container
+		.row
+			.col-sm-12
+				h2
+					| Kohler Power Systems
+				.row
+					.col-sm-offset-3.col-sm-6
+						.portfolio-body
+							h4
+								| Client
+							p
+								| Kohler Singapore
+							h4
+								| Live Site
+							p
+								| http://kohler.com.sg
+							h4
+								| Project Type
+							p
+								| Responsive Website
+							h4
+								| Project Launched
+							p
+								| January 2016
+							h4
+								| Role
+							p
+								| Web Development
+							h4
+								| Tools
+							p
+								| Bootstrap, JavaScript, HTML5, CSS, Grunt, Jade, CMS
+
+		.row.text-center
+			.col-sm-12
+				h5
+					| Content Page
+			.col-sm-6
+				img(src=folder + "assets/img/dist/kohler/content-01.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/kohler/content-02.jpg" class="img-responsive")
+			
+		.row
+			.col-sm-12.text-center
+				h5
+					| Mobile View
+				img(src=folder + "assets/img/dist/kohler/mobile.jpg" class="img-responsive")
+				
+include /includes/footer

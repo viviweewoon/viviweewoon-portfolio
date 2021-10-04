@@ -1,0 +1,5 @@
+for bannerImg in bannerImgs
+	.jumbotron.text-center.masthead
+		a(href=bannerImg.link, target="_blank")
+			img(src=folder + "assets/img/dist/#{ bannerImg.src }" class="img-responsive hidden-xs" alt=bannerImg.alt )
+			img(src=folder + "assets/img/dist/#{ bannerImg.srcM }" class="img-responsive visible-xs" alt=bannerImg.alt )

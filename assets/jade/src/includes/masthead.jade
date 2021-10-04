@@ -1,0 +1,10 @@
+for bannerImg in bannerImgs
+	.jumbotron.text-center.masthead
+		a(href=bannerImg.link)
+		img(src=folder + "assets/img/dist/#{ bannerImg.src }" class="img-responsive" alt=bannerImg.alt )
+
+	.col-sm-12
+		.socialWrap
+			a(href="https://instagram.com/vivienhohweewoon/" title="Instagram" target="_blank") instagram
+			a(href="http://vivienho.tumblr.com/" title="Tumblr" target="_blank") tumblr
+			a(href="mailto:vforvivien.ho@gmail.com" title="Email" target="_blank") email

@@ -1,0 +1,73 @@
+- var pagetitle = "Colgate"
+- var pagename = "portfolio"
+- var folder = "../"
+
+- bannerImgs = []
+- bannerImgs.push( { "link":"#", "src":"colgate/banner.jpg", "srcM":"colgate/banner-m.jpg", "alt":"Colgate" } )
+
+include /includes/header
+
+<!--  ====================  -->
+<!--  === Main content ===  -->
+<!--  ====================  -->
+div(class=pagename, role="main" )
+	include /includes/banner
+
+	.container
+		.row
+			.col-sm-12
+				h2
+					| Guess The Gargle
+				.row
+					.col-sm-offset-3.col-sm-6
+						.portfolio-body
+							h4
+								| Client
+							p
+								| Colgate Malaysia
+							h4
+								| Live Site
+							a( href="https://apps.facebook.com/colgate-herbal-salt/?fb_source=search&ref=ts&fref=ts" target="_blank")
+								| https://apps.facebook.com/colgate-herbal-salt/?fb_source=search&ref=ts&fref=ts
+							h4
+								| Project Type
+							p
+								| Facebook Page Application
+							h4
+								| Project Launched
+							p
+								| June 2014	
+							h4
+								| Role
+							p
+								| Facebook App Development
+							h4
+								| Tools
+							p
+								| Facebook Developers, HTML / CSS, JavaScript / jQuery, Music Player
+
+		.row.text-center
+			.col-sm-12
+				h5
+					| View Project
+				div(class="embed-responsive embed-responsive-16by9")
+					iframe(width="853" height="480" class="embed-responsive-item" src="https://www.youtube.com/embed/akt_tBl20SQ" frameborder="0" allowfullscreen)
+		.row.text-center
+			.col-sm-12
+				h5
+					| Content Page
+			.col-sm-6
+				img(src=folder + "assets/img/dist/colgate/content-01.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/colgate/content-02.jpg" class="img-responsive")
+				
+		.row.text-center
+			.col-sm-12
+				h5
+					| Content Page
+			.col-sm-6
+				img(src=folder + "assets/img/dist/colgate/content-03.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/colgate/content-04.jpg" class="img-responsive")
+			
+include /includes/footer

@@ -1,0 +1,69 @@
+- var pagetitle = "Boss In Red"
+- var pagename = "portfolio"
+- var folder = "../"
+
+- bannerImgs = []
+- bannerImgs.push( { "link":"#", "src":"bossinred/banner.jpg", "srcM":"bossinred/banner-m.jpg", "alt":"photo 01" } )
+
+- projBodys = []
+- projBodys.push( { "h2":"Hi", "h4":"hello", "p":"oh", "h4":"hello", "p":"oh" } )
+
+include /includes/header
+
+<!--  ====================  -->
+<!--  === Main content ===  -->
+<!--  ====================  -->
+div(class=pagename, role="main" )
+	include /includes/banner
+
+	.container
+		.row
+			.col-sm-12
+				h2
+					| BossInRed Campaign
+				.row
+					.col-sm-offset-3.col-sm-6
+						.portfolio-body
+							h4
+								| Client
+							p
+								| Tune Talk Malaysia | The largest mobile prepaid MVNO service provider in Malaysia.
+							h4
+								| Live Site
+							p
+								| http://redthenewblack.com/bossinred/
+							h4
+								| Project Type
+							p
+								| Campaign Website
+							h4
+								| Project Launched
+							p
+								| 2014
+							h4
+								| Role
+							p
+								| Creative Idea, Art Direction, Visual Design, Web Development
+							h4
+								| Tools
+							p
+								| Photoshop CS5, Illustrator CS5, HTML, CSS
+								
+		.row.text-center
+			.col-sm-12
+				h5
+					| View Project
+				div(class="embed-responsive embed-responsive-16by9")
+					iframe(width="853" height="480" class="embed-responsive-item" src="https://www.youtube.com/embed/aWyZSWkuB20?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen)
+			.col-sm-8.col-sm-offset-2
+				img(src=folder + "assets/img/dist/bossinred/content-01.jpg" class="img-responsive")
+			.col-sm-8.col-sm-offset-2
+				img(src=folder + "assets/img/dist/bossinred/content-02.jpg" class="img-responsive")
+			.col-sm-8.col-sm-offset-2
+				img(src=folder + "assets/img/dist/bossinred/content-03.jpg" class="img-responsive")
+			.col-sm-8.col-sm-offset-2
+				img(src=folder + "assets/img/dist/bossinred/content-04.jpg" class="img-responsive")
+			.col-sm-8.col-sm-offset-2
+				img(src=folder + "assets/img/dist/bossinred/content-05.jpg" class="img-responsive")
+
+include /includes/footer

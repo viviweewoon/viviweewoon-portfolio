@@ -1,0 +1,104 @@
+@import "../style.styl";
+
+//
+// Main
+// --------------------------------------------------
+
+html, body 
+	overflow-x hidden
+	overflow-y visible
+
+body.nav-open:after
+	content ''
+	display block
+	position fixed
+	top 0
+	bottom 0
+	left 0
+	right 0
+	width 100%
+	height 100%
+	z-index 1000
+	background rgba(0,0,0,0.7)
+
+body
+	font-family 'Lato', Helvetica, Arial, sans-serif
+	-webkit-font-smoothing antialiased
+	font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+	color site-dark-grey
+	font-size 13px
+	
+.img-responsive 
+	width 100%
+
+h1
+	font-size 22px
+	font-family Quicksand
+	@media (min-width: width-tabletportrait)
+		font-size 30px
+		
+	@media (min-width: width-tabletlandscape)	
+		font-size 45px
+	@media (min-width: width-desktop)
+		font-size 60px
+h2
+	font-size 24px
+	margin -20px 0 25px
+	font-family 'Quicksand',sans-serif
+	font-weight 400
+	text-align center
+	
+	@media (min-width: width-tabletportrait)
+		margin -40px 0 40px
+		font-weight 300
+		font-size 40px
+		
+h3
+	font 16px 'Quicksand',sans-serif
+	color site-white
+	font-weight 400
+	@media (min-width: width-tabletportrait)
+		font-size 20px
+h4
+	font-size 14px
+	font-weight 600
+	margin-bottom 5px
+	
+h5
+	font-size 16px
+	line-height 15px
+	margin 10px 0 10px
+	font-weight 400
+	text-align center
+	display inline-block
+	
+	@media (min-width: width-tabletportrait)
+		font-size 26px
+		line-height 25px
+		margin 25px 0 20px
+		
+	@media (min-width: width-tabletlandscape)
+		margin 45px 0 20px
+		
+	&:after
+		content ""
+		display inline-block
+		width 20%
+		height 2px
+		background site-dark-grey
+		
+		@media (min-width: width-tabletportrait)
+			width 30%
+			height 3px
+	
+.margin-40
+	margin 0 0 20px
+	@media (min-width: width-tabletportrait)
+		margin 0 0 40px
+
+.video-section
+	video
+		width 100%
+		height 100%
+		
