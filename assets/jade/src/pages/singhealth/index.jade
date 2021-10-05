@@ -1,0 +1,68 @@
+- var pagetitle = "National Heart Centre Singapore"
+- var pagename = "portfolio"
+- var folder = "../"
+
+- bannerImgs = []
+- bannerImgs.push( { "link":"https://www.nhcs.com.sg/patient-care/conditions-treatments", "src":"singhealth/banner.jpg", "srcM":"singhealth/banner-m.jpg", "alt":"National Heart Centre Singapore" } )
+
+include /includes/header
+
+<!--  ====================  -->
+<!--  === Main content ===  -->
+<!--  ====================  -->
+div(class=pagename, role="main" )
+	include /includes/banner
+
+	.container
+		.row
+			.col-sm-12
+				h2
+					| National Heart Centre Singapore
+				.row
+					.col-sm-offset-3.col-sm-6
+						.portfolio-body
+							h4
+								| Client
+							p
+								| National Heart Centre Singapore | SingHealth
+							h4
+								| Live Site
+							a( href="https://www.nhcs.com.sg/patient-care/conditions-treatments" target="_blank")
+								| www.nhcs.com.sg
+							h4
+								| Project Type
+							p
+								| Website Revamp | Responsive Website
+							h4
+								| Project Launched
+							p
+								| 2018
+							h4
+								| Role
+							p
+								| Web Development
+							h4
+								| Tools
+							p
+								| HTML5, CSS, JS, Jade, Stylus
+		.row
+			.col-sm-12.text-center
+				h5
+					| On Mobile
+				img(src=folder + "assets/img/dist/singhealth/mobile-article.jpg" class="img-responsive")
+
+		.row.text-center
+			.col-sm-12
+				h5
+					| Articles Page
+			.col-sm-offset-2.col-sm-8
+				img(src=folder + "assets/img/dist/singhealth/content-02.jpg" class="img-responsive")
+		
+		.row.text-center
+			.col-sm-12
+				h5
+					| Standard Page
+			.col-sm-offset-2.col-sm-8
+				img(src=folder + "assets/img/dist/singhealth/content-01.jpg" class="img-responsive")		
+
+include /includes/footer

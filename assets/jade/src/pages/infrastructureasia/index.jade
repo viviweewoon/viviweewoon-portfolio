@@ -1,0 +1,70 @@
+- var pagetitle = "Infrastructure Asia"
+- var pagename = "portfolio"
+- var folder = "../"
+
+- bannerImgs = []
+- bannerImgs.push( { "link":"https://www.infrastructureasia.org/", "src":"infrastructureasia/banner.jpg", "srcM":"infrastructureasia/banner-m.jpg", "alt":"Infrastructure Asia" } )
+
+include /includes/header
+
+<!--  ====================  -->
+<!--  === Main content ===  -->
+<!--  ====================  -->
+div(class=pagename, role="main" )
+	include /includes/banner
+
+	.container
+		.row
+			.col-sm-12
+				h2
+					| Infrastructure Asia
+				.row
+					.col-sm-offset-3.col-sm-6
+						.portfolio-body
+							h4
+								| Client
+							p
+								| Infrastructure Asia - Enterprise Singapore
+							h4
+								| Live Site
+							a( href="https://www.infrastructureasia.org/" target="_blank")
+								| infrastructureasia.org
+							h4
+								| Project Type
+							p
+								| Website Revamp | Responsive Website
+							h4
+								| Project Launched
+							p
+								| 2018
+							h4
+								| Role
+							p
+								| Web Development
+							h4
+								| Tools
+							p
+								| HTML5, CSS, JS, Jade, SCSS
+		.row
+			.col-sm-12.text-center
+				h5
+					| On Mobile
+				img(src=folder + "assets/img/dist/infrastructureasia/mobile-article.jpg" class="img-responsive")
+
+		.row.text-center
+			.col-sm-12
+				h5
+					| Articles Page
+			.col-sm-6
+				img(src=folder + "assets/img/dist/infrastructureasia/content-03.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/infrastructureasia/content-02.jpg" class="img-responsive")
+		
+		.row.text-center
+			.col-sm-12
+				h5
+					| Standard Page
+			.col-sm-offset-2.col-sm-8
+				img(src=folder + "assets/img/dist/infrastructureasia/content-01.jpg" class="img-responsive")		
+
+include /includes/footer

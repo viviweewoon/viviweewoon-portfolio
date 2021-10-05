@@ -1,0 +1,71 @@
+doctype html
+
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en">
+<![endif]-->
+
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+head
+	meta( charset="utf-8" )
+	meta( http-equiv="x-ua-compatible", content="ie=edge" )
+	title #{pagetitle} | Vivien Ho
+	meta( name="description", content="" )
+	meta( name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" )
+	
+	link(rel="shortcut icon" href="favicon.ico")
+	link( rel="apple-touch-icon", href="apple-touch-icon.png" )
+	<!-- Place favicon.ico in the root directory -->
+	link(href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900italic,900' rel='stylesheet' type='text/css')
+	link(href='https://fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css')
+	link(href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css')
+	link( rel="stylesheet", href=folder + "assets/css/dist/style.min.css" )
+	
+	<!--[if lt IE 9]>
+	script( src=folder + "assets/js/dist/vendor/html5shiv.min.js" )
+	<![endif]-->
+
+<body>
+
+<!--[if lt IE 7]>
+p.browsehappy You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+<![endif]-->
+
+<!--  ==============  -->
+<!--  === Header ===  -->
+<!--  ==============  -->
+div(id="preloader")
+header
+	div.container
+		div.row
+			nav(class="navbar navbar-default navbar-fixed-top")
+				div(class="container-fluid")
+					.navbar-header
+						button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false")
+							span(class="sr-only") Toggle navigation
+							span(class="icon-bar top-bar")
+							span(class="icon-bar middle-bar")
+							span(class="icon-bar bottom-bar")
+						a(class="navbar-brand" href=folder) Vivien H
+							span &bull;
+			
+					div(class="navbar-collapse collapse" id="navbar-collapse" aria-expanded="false")
+						ul(class="nav navbar-nav")
+							li
+								a(href=folder)
+									| Home
+							li 
+								a(href="mailto:viviweewoon@gmail.com" target="_blank")
+									| Email		
+							//- li
+								//- a(href=folder + "assets/media/vivienho-cv.pdf" title="resume" target="_blank")
+									//- | Resume		
+							//- li
+							//- 	a(href="#" target="_blank")
+							//- 		| LinkedIn
+							//- li 
+							//- 	a(href="tel:+" target="_blank")
+							//- 		| Contact Number
+			

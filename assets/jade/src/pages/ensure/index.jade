@@ -1,0 +1,78 @@
+- var pagetitle = "Ensure Microsite"
+- var pagename = "portfolio"
+- var folder = "../"
+
+- bannerImgs = []
+- bannerImgs.push( { "link":"#", "src":"ensure/banner.gif", "srcM":"ensure/banner-m.jpg", "alt":"photo 01" } )
+
+include /includes/header
+
+<!--  ====================  -->
+<!--  === Main content ===  -->
+<!--  ====================  -->
+div(class=pagename, role="main" )
+	include /includes/banner
+
+	.container
+		.row
+			.col-sm-12
+				h2
+					| Ensure Microsite
+				.row
+					.col-sm-offset-3.col-sm-6
+						.portfolio-body
+							h4
+								| Client
+							p
+								| Abbott Singapore | The global healthcare company 
+							h4
+								| Live Site
+							a( href="http://dev.vintedge.com/abbott/ensure-microsite/" target="_blank")
+								| http://abbottfamily.com.sg/ensure
+							h4
+								| Project Type
+							p
+								| Responsive Website
+							h4
+								| Project Launched
+							p
+								| September 2015
+							h4
+								| Role
+							p
+								| Web Development
+							h4
+								| Tools
+							p
+								| Bootstrap, JavaScript, HTML5, CSS, Grunt, Jade
+
+		.row.text-center
+			.col-sm-12
+				h5
+					| Content Page
+			.col-sm-6
+				img(src=folder + "assets/img/dist/ensure/content-01.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/ensure/content-02.jpg" class="img-responsive")
+			
+		.row
+			.col-sm-12.text-center
+				h5
+					| Mobile View
+				img(src=folder + "assets/img/dist/ensure/mobile.jpg" class="img-responsive")
+		.row.text-center
+			.col-sm-12
+				h5
+					| Content Page
+			.col-sm-6
+				img(src=folder + "assets/img/dist/ensure/content-03.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/ensure/content-04.jpg" class="img-responsive")
+			
+			.col-sm-12
+				h5
+					| View Project
+				div(class="embed-responsive embed-responsive-16by9")
+					iframe(width="853" height="480" class="embed-responsive-item" src="https://www.youtube.com/embed/oAqyB0CK1-M" frameborder="0" allowfullscreen)
+
+include /includes/footer

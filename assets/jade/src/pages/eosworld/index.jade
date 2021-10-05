@@ -1,0 +1,99 @@
+- var pagetitle = "EOS World"
+- var pagename = "portfolio"
+- var folder = "../"
+
+- bannerImgs = []
+- bannerImgs.push( { "link":"#", "src":"eosworld/banner.gif", "srcM":"eosworld/banner-m.jpg", "alt":"EOS World" } )
+
+include /includes/header
+
+<!--  ====================  -->
+<!--  === Main content ===  -->
+<!--  ====================  -->
+div(class=pagename, role="main" )
+	include /includes/banner
+
+	.container
+		.row
+			.col-sm-12
+				h2
+					| EOS World
+				.row
+					.col-sm-offset-3.col-sm-6
+						.portfolio-body
+							h4
+								| Client
+							p
+								| Canon Singapore
+							h4
+								| Live Site
+							a( href="http://eosworld.canon.com.sg/" target="_blank")
+								| http://eosworld.canon.com.sg/
+							h4
+								| Project Type
+							p
+								| Website Revamp | Responsive Website
+							h4
+								| Project Launched
+							p
+								| January 2017	
+							h4
+								| Role
+							p
+								| Web Development
+							h4
+								| Tools
+							p
+								| Bootstrap, JavaScript, HTML5, CSS, Grunt, Jade, Wordpress
+
+		.row.text-center
+			.col-sm-12
+				h5
+					| View Project
+				div(class="embed-responsive embed-responsive-16by9")
+					iframe(width="853" height="480" class="embed-responsive-item" src="https://www.youtube.com/embed/0oAcpdUqagk" frameborder="0" allowfullscreen)
+
+			.col-sm-12
+				h5
+					| Navigation & Article Listing Page
+			.col-sm-6
+				img(src=folder + "assets/img/dist/eosworld/content-01.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/eosworld/content-02.jpg" class="img-responsive")
+			.col-sm-12.text-center
+				h5
+					| Mobile View
+				img(src=folder + "assets/img/dist/eosworld/mobile.gif" class="img-responsive")
+				
+		.row.text-center
+			.col-sm-12
+				h5
+					| Articles Page
+			.col-sm-6
+				img(src=folder + "assets/img/dist/eosworld/content-03.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/eosworld/content-04.jpg" class="img-responsive")
+			
+		.row
+			.col-sm-12.text-center
+				h5
+					| Articles page on mobile view
+				img(src=folder + "assets/img/dist/eosworld/mobile-article.jpg" class="img-responsive")
+				
+		.row.text-center
+			.col-sm-12
+				h5
+					| Groups Page
+			.col-sm-6
+				img(src=folder + "assets/img/dist/eosworld/content-05.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/eosworld/content-06.jpg" class="img-responsive")
+			
+		.row
+			.col-sm-12.text-center
+				h5
+					| Groups page on mobile view
+				img(src=folder + "assets/img/dist/eosworld/mobile-groups.jpg" class="img-responsive")
+				
+
+include /includes/footer

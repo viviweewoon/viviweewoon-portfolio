@@ -1,0 +1,45 @@
+<!--  ==============  -->
+<!--  === Footer ===  -->
+<!--  ==============  -->
+footer
+	div.container
+		div.row
+		
+<!-- JavaScript at the bottom for fast page loading -->
+
+<!-- Uncomment if you need Modernizr
+script( src=pagename === "home" ? "assets/js/dist/vendor/modernizr.min.js" : "../assets/js/dist/vendor/modernizr.min.js" )
+-->
+
+<!-- Remove if you dont need to support IE8 & lower -->
+<!--[if lte IE 8]>
+script(src="//code.jquery.com/jquery-1.12.4.min.js")
+if pagename === "home"
+	<script>window.jQuery || document.write('<script src="assets/js/dist/vendor/jquery.min.js"><\/script>')</script>
+else
+	<script>window.jQuery || document.write('<script src="../assets/js/dist/vendor/jquery.min.js"><\/script>')</script>
+script( src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js" )
+script( src="//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js" )
+<![endif]-->
+
+<!--[if gt IE 8]><!-->
+script(src="//code.jquery.com/jquery-2.2.4.min.js")
+if pagename === "home"
+	<script>window.jQuery || document.write('<script src="assets/js/dist/vendor/jquery.2.min.js"><\/script>')</script>
+else
+	<script>window.jQuery || document.write('<script src="../assets/js/dist/vendor/jquery.2.min.js"><\/script>')</script>
+<!--<![endif]-->
+
+script( src=pagename === "home" ? "assets/js/dist/script.min.js" : "../assets/js/dist/script.min.js" )
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+script.
+	/*(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+	function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+	e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+	e.src='//www.google-analytics.com/analytics.js';
+	r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+	ga('create','UA-XXXXX-X');ga('send','pageview');*/
+
+</body>
+</html>

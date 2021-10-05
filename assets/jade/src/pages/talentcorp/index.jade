@@ -1,0 +1,72 @@
+- var pagetitle = "TalentCorp Malaysia"
+- var pagename = "portfolio"
+- var folder = "../"
+
+- bannerImgs = []
+- bannerImgs.push( { "link":"#", "src":"talentcorp/banner.jpg", "srcM":"talentcorp/banner-m.jpg", "alt":"Talentcorp" } )
+
+include /includes/header
+
+<!--  ====================  -->
+<!--  === Main content ===  -->
+<!--  ====================  -->
+div(class=pagename, role="main" )
+	include /includes/banner
+
+	.container
+		.row
+			.col-sm-12
+				h2
+					| TalentCorp Malaysia
+				.row
+					.col-sm-offset-3.col-sm-6
+						.portfolio-body
+							h4
+								| Client
+							p
+								| TalentCorp Malaysia
+							h4
+								| Live Site
+							a( href="http://www.talentcorp.com.my/" target="_blank")
+								| http://www.talentcorp.com.my/
+							h4
+								| Project Type
+							p
+								| Responsive Website, website maintenance
+							h4
+								| Project Launched
+							p
+								| 2014	
+							h4
+								| Role
+							p
+								| Web Development
+							h4
+								| Tools
+							p
+								| WordPress, JavaScript, HTML5, CSS
+
+		.row.text-center
+			.col-sm-12
+				h5
+					| View Project
+				div(class="embed-responsive embed-responsive-16by9")
+					iframe(width="853" height="480" class="embed-responsive-item" src="https://www.youtube.com/embed/AP9qxNF9N8s" frameborder="0" allowfullscreen)
+		.row.text-center
+			.col-sm-12
+				h5
+					| Mobile View
+			.col-sm-12
+				img(src=folder + "assets/img/dist/talentcorp/mobile.jpg" class="img-responsive")
+					
+		.row.text-center
+			.col-sm-12
+				h5
+					| Content Page
+			.col-sm-6
+				img(src=folder + "assets/img/dist/talentcorp/content-01.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/talentcorp/content-02.jpg" class="img-responsive")
+			
+				
+include /includes/footer

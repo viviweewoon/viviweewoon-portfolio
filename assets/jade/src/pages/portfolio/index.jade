@@ -1,0 +1,97 @@
+- var pagetitle = "American Express"
+- var pagename = "portfolio"
+- var folder = "../"
+
+- bannerImgs = []
+- bannerImgs.push( { "link":"#", "src":"edm/banner-01.gif", "srcM":"edm/banner-01-xs.gif", "alt":"American Express" } )
+
+include /includes/header
+
+<!--  ====================  -->
+<!--  === Main content ===  -->
+<!--  ====================  -->
+div(class=pagename, role="main" )
+	include /includes/banner
+
+	.container
+		.row
+			.col-sm-12
+				h2
+					| American Express 
+				.row
+					.col-sm-offset-3.col-sm-6
+						.portfolio-body
+							h4
+								| Client
+							p
+								| American Express
+							h4
+								| Project Type
+							p
+								| Digital Banners | Responsive Edms | Social Media Video
+
+		.row
+			.col-sm-offset-1.col-sm-10.text-center
+				h5
+					| Video on social media (Option 1)
+				.video-section
+					video( autoplay loop muted poster="")
+						source( src=folder + "assets/media/edm/video-01.mp4" type="video/mp4")
+			
+		.row
+			.col-sm-offset-1.col-sm-10.text-center
+				h5
+					| Video on social media (Option 2)
+				.video-section
+					video( autoplay loop muted poster="")
+						source( src=folder + "assets/media/edm/edm-video-01.mp4" type="video/mp4")
+               
+				
+		.row.text-center
+			.col-sm-12
+				h5
+					| Video on instagram
+			.col-sm-4
+				.video-section
+					video( autoplay loop muted poster="")
+						source( src=folder + "assets/media/edm/video-02.mp4" type="video/mp4")
+			.col-sm-4
+				.video-section
+					video( autoplay loop muted poster="")
+						source( src=folder + "assets/media/edm/video-04.mp4" type="video/mp4")
+			.col-sm-4
+				.video-section
+					video( autoplay loop muted poster="")
+						source( src=folder + "assets/media/edm/video-03.mp4" type="video/mp4")
+		.row
+			.col-sm-12.text-center
+				h5
+					| HTML5 Digital Banners and Static Banners
+				div.row.digitalbanner-container
+					.col-sm-6.col-md-3
+						.digitalbanner-section
+							img( src=folder + "assets/img/dist/edm/300-bg.jpg" class="bg")
+							img( src=folder + "assets/img/dist/edm/300-card.png" class="card")
+							img( src=folder + "assets/img/dist/edm/300-amex-logo.jpg" class="logo")
+							img( src=folder + "assets/img/dist/edm/300-text1.png" class="cp1")
+							img( src=folder + "assets/img/dist/edm/300-text2.png" class="cp2")
+							img( src=folder + "assets/img/dist/edm/300-text3.png" class="cp3")
+							img( src=folder + "assets/img/dist/edm/300-text4.png" class="cp4")
+							img( src=folder + "assets/img/dist/edm/300-text5.png" class="cp5")
+							img( src=folder + "assets/img/dist/edm/300-cta.png" class="footer")
+					.col-sm-6.col-md-3.hidden-xs
+						.digitalbanner160-section
+							img( src=folder + "assets/img/dist/edm/160-bg.jpg" class="bg")
+							img( src=folder + "assets/img/dist/edm/160-card.png" class="card")
+							img( src=folder + "assets/img/dist/edm/160-amex-logo.jpg" class="logo")
+							img( src=folder + "assets/img/dist/edm/160-text1.png" class="cp1")
+							img( src=folder + "assets/img/dist/edm/160-text2.png" class="cp2")
+							img( src=folder + "assets/img/dist/edm/160-text3.png" class="cp3")
+							img( src=folder + "assets/img/dist/edm/160-text4.png" class="cp4")
+							img( src=folder + "assets/img/dist/edm/160-text5.png" class="cp5")
+							img( src=folder + "assets/img/dist/edm/160-cta.png" class="footer")
+					.col-sm-6.col-md-3
+						img( src=folder + "assets/img/dist/edm/static-banner-02.jpg" style="display:block !important;margin:0 auto;")
+					.col-sm-6.col-md-3.hidden-xs
+						img( src=folder + "assets/img/dist/edm/static-banner-03.jpg" style="display:block !important;margin:0 auto;")
+include /includes/footer

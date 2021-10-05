@@ -1,0 +1,82 @@
+- var pagetitle = "Science Centre"
+- var pagename = "portfolio"
+- var folder = "../"
+
+- bannerImgs = []
+- bannerImgs.push( { "link":"https://www.science.edu.sg/", "src":"sciencecentre/banner.jpg", "srcM":"sciencecentre/banner-m.jpg", "alt":"Science Centre" } )
+
+include /includes/header
+
+<!--  ====================  -->
+<!--  === Main content ===  -->
+<!--  ====================  -->
+div(class=pagename, role="main" )
+	include /includes/banner
+
+	.container
+		.row
+			.col-sm-12
+				h2
+					| Science Centre
+				.row
+					.col-sm-offset-3.col-sm-6
+						.portfolio-body
+							h4
+								| Client
+							p
+								| Science Centre Singapore
+							h4
+								| Live Site
+							a( href="https://www.science.edu.sg/" target="_blank")
+								| science.edu.sg
+							h4
+								| Project Type
+							p
+								| Website Revamp | Responsive Website
+							h4
+								| Project Launched
+							p
+								| May 2018	
+							h4
+								| Role
+							p
+								| Web Development
+							h4
+								| Tools
+							p
+								| HTML5, CSS, JS, Jade, SCSS
+
+		.row.text-center
+			.col-sm-12
+				h5
+					| View Project
+			.col-sm-6
+				img(src=folder + "assets/img/dist/sciencecentre/content-01.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/sciencecentre/content-02.jpg" class="img-responsive")
+				
+		.row.text-center
+			.col-sm-12
+				h5
+					| Articles Page
+			.col-sm-6
+				img(src=folder + "assets/img/dist/sciencecentre/content-03.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/sciencecentre/content-04.jpg" class="img-responsive")
+			
+		.row
+			.col-sm-12.text-center
+				h5
+					| On Mobile
+				img(src=folder + "assets/img/dist/sciencecentre/mobile-article.jpg" class="img-responsive")
+				
+		.row.text-center
+			.col-sm-12
+				h5
+					a(href="https://www.science.edu.sg/visit-us/plan-your-visit" target="_blank")
+						| Plan Your Itinerary Page
+			.col-sm-offset-3.col-sm-6
+				img(src=folder + "assets/img/dist/sciencecentre/content-05.jpg" class="img-responsive")
+				
+
+include /includes/footer

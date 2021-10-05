@@ -1,0 +1,51 @@
+@import "../style.styl";
+
+//
+// Thumbnail
+// --------------------------------------------------
+	
+.thumbnail
+	position relative
+	text-align center
+	vertical-align middle
+	padding 0
+	border 0 
+	border-radius 0
+	background site-white
+	margin-bottom 25px
+	
+	@media (min-width: width-tabletlandscape)
+		margin-bottom 50px
+	
+	h3
+		width 100%
+		display block
+		margin 0
+		padding 0
+		color site-black
+		transition .3s ease-in-out
+		text-align center
+		background-color transparent
+		margin-top:10px
+		
+		@media (min-width: width-tabletlandscape)
+			position absolute
+			width 100%
+			bottom 0
+			left 0
+			z-index 2
+			opacity 0
+			margin-top 0
+	img
+		filter grayscale(0)
+		transition .3s ease-in-out
+
+	&:hover 
+		img
+			@media (min-width: width-tabletportrait)
+				filter grayscale(100%)
+		h3
+			@media (min-width: width-tabletportrait)
+				opacity 1
+				bottom -30px
+				color site-black

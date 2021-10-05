@@ -1,0 +1,80 @@
+- var pagetitle = "Unicard"
+- var pagename = "portfolio"
+- var folder = "../"
+
+- bannerImgs = []
+- bannerImgs.push( { "link":"#", "src":"unicard/banner.jpg", "srcM":"unicard/banner-m.jpg", "alt":"Unicard" } )
+
+include /includes/header
+
+<!--  ====================  -->
+<!--  === Main content ===  -->
+<!--  ====================  -->
+div(class=pagename, role="main" )
+	include /includes/banner
+
+	.container
+		.row
+			.col-sm-12
+				h2
+					| Unicard 
+				.row
+					.col-sm-offset-3.col-sm-6
+						.portfolio-body
+							h4
+								| Client
+							p
+								| Alamanda | Shopping Mall in Malaysia
+							h4
+								| Live Site
+							a( href="http://unicard.com.my/" target="_blank")
+								| http://unicard.com.my/
+							h4
+								| Project Type
+							p
+								| Campaign Responsive Website
+							h4
+								| Project Launched
+							p
+								| Nov 2014	
+							h4
+								| Role
+							p
+								| Web Development
+							h4
+								| Tools
+							p
+								| Bootstrap, JavaScript, HTML5, CSS, Grunt, Handlebars Js
+
+		.row.text-center
+			.col-sm-12
+				h5
+					| Content Page
+			.col-sm-6
+				img(src=folder + "assets/img/dist/unicard/content-02.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/unicard/content-01.jpg" class="img-responsive")
+			
+		.row
+			.col-sm-12.text-center
+				h5
+					| Mobile View
+				img(src=folder + "assets/img/dist/unicard/mobile.jpg" class="img-responsive")
+				
+		.row.text-center
+			.col-sm-12
+				h5
+					| Content Page
+			.col-sm-6
+				img(src=folder + "assets/img/dist/unicard/content-03.jpg" class="img-responsive")
+			.col-sm-6
+				img(src=folder + "assets/img/dist/unicard/content-04.jpg" class="img-responsive")
+			
+		.row
+			.col-sm-12.text-center
+				h5
+					| Mobile View
+				img(src=folder + "assets/img/dist/unicard/mobile-01.jpg" class="img-responsive")
+				
+
+include /includes/footer

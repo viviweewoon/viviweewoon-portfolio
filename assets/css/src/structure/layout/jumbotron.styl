@@ -1,0 +1,74 @@
+@import "../style.styl";
+
+//
+// jumbotron
+// --------------------------------------------------
+
+.jumbotron
+	background site-grey
+	padding 0
+	margin 0
+	position relative
+	margin 35px 0 0
+
+	@media (min-width: width-tabletportrait)
+		margin 40px 0 0
+		
+.contact
+	text-align center
+	padding 20% 0 22%
+	
+	@media (min-width: width-tabletportrait)
+		padding 10% 0 12%
+	a
+		display block
+		font-size 24px
+		font-weight bold
+		margin 20px 0 5px
+		
+		@media (min-width: width-tabletportrait)
+			font-size 42px
+			margin 30px 0 15px
+			
+		@media (min-width: width-tabletlandscape)
+			font-size 55px
+			margin 30px 0 20px
+	
+	ul
+		li
+			display inline-block
+			padding 0 10px
+			border-right 1px solid site-black
+			line-height 12px
+			@media (min-width: width-tabletportrait)
+				padding 0 15px
+				line-height 14px
+				border-right 1px solid site-black
+				border-left 1px solid site-white
+				
+			&:last-child
+				border-right 0
+				
+			&:first-child
+				border-left 0
+			
+			a
+				font-size 16px
+				margin 0
+				font-weight normal
+				@media (min-width: width-tabletportrait)
+					font-size 22px
+					
+				@media (min-width: width-tabletlandscape)
+					font-size 28px
+	h5
+		font-size 14px
+		text-transform uppercase
+		font-weight bold
+		line-height 15px
+		margin-top 0
+		@media (min-width: width-tabletportrait)
+			font-size 16px
+			&:after
+				height 2px
+				width 10%
